@@ -374,12 +374,12 @@ public class ParryAndStunManager implements Listener {
         });
 
         // 3. Decaimiento pasivo de Stun de enemigos
-        enemyCurrentStun.entrySet().removeIf(entry -> {
-            double next = entry.getValue() - (decay * 0.5);
-            if (next <= 0.0) return true;
-            entry.setValue(next);
-            return false;
-        });
+        for (UUID id : enemyCurrentStun.keySet()) {
+            enemyCurrentStun.computeIfPresent(id, (k, val) -> {
+                double next = val - (decay * 0.5);
+                return next <= 0.0 ? null : next;
+            });
+        }
     }
 
     private LivingEntity resolveLivingAttacker(Entity damager) {
