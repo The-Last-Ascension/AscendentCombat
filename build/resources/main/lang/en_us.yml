@@ -1,0 +1,28 @@
+# ============================================================================
+# AscendentCombat - English (en_us) [SECONDARY]
+# ============================================================================
+
+combat:
+  parry-success: "&b&lPERFECT PARRY! &7(0 dmg | &e+{stun} Enemy Stun&7)"
+  block-mitigated: "&eBlocked &7(-{mitigated}% dmg | &c+{stun} your Stun&7)"
+  unparryable-blocked: "&6&lUNPARRYABLE ATTACK! &7Cannot be parried: partially blocked (&c+{stun} your Stun&7)."
+  stunned: "&c&lGUARD BROKEN / STUNNED! &7You cannot act for &e{seconds}s&7."
+  enemy-stunned: "&6&lENEMY STUNNED! &e{target} &7lost posture for &e{seconds}s&7."
+  guard-raised: "&7Guard active &8[&bParry&7/&eBlock&8] &7Posture: &e{stun}&7/&6{max_stun}"
+  impregnated: "&7You impregnated &f{target} &7with {element} &8(&f{status}&8)&7."
+  reaction-triggered: "&d&lELEMENTAL REACTION! &f{reaction} &8({elem1} &7+ {elem2}&8) &7on &e{target}&7!"
+  coop-window-opened: "&b&lSYNERGY OPEN! &e{player} &7channeled {element}&7. Use another element nearby to unleash a &6&lJoint Ultimate&7!"
+  coop-ultimate-triggered: "&6&l✦ JOINT ULTIMATE: {name}! ✦ &7(&e{player1} &7+ &e{player2}&7)"
+  downed-self: "&c&lYOU ARE DOWNED! &7Wait for an ally to revive you (&e{seconds}s&7)."
+  downed-ally: "&e&l{player} is downed! &7Get close and hold &fShift (Sneak) &7or &fRight-Click &7to revive them."
+  reviving-progress: "&aReviving &e{target}&a... &8[{bar}&8] &f{percent}%"
+  being-revived: "&a&e{healer} &ais reviving you! &8[{bar}&8] &f{percent}%"
+  revived-success: "&a&lYou have been revived by &e{healer}&a&l!"
+  revived-healer: "&a&lYou revived &e{target}&a&l!"
+  bleedout-death: "&4You succumbed to your wounds after bleeding out."
+  cmd-info-header: "&6&l=== Combat State of {player} ==="
+  cmd-info-posture: "&7Your Stun/Posture: &e{stun}&7/&6{max_stun} &8| &7Stunned: &f{stunned} &8| &7Downed: &f{downed}"
+  cmd-info-weapon: "&7Held Weapon: &f{item} &8| &7Block: &e{block} &8| &7Parry: &b{parry} &8| &7Element: {element}"
+  cmd-weapon-updated: "&aWeapon property &e{prop} &aupdated to &f{value}&a."
+  cmd-no-item: "&cYou must hold a weapon or item in your main hand."
+  cmd-dummy-spawned: "&aTest dummy spawned (&e{mode}&a). Hit it or let it attack you to test Parry, Block, Stun, and Elements."

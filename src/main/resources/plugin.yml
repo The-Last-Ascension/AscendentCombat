@@ -1,0 +1,27 @@
+name: AscendentCombat
+description: "${description}"
+prefix: AscendentCombat
+version: "${version}"
+
+main: com.thelastascension.ascendentCombat.AscendentCombat
+api-version: '1.21.1'
+load: POSTWORLD
+depend: [ AscendentCore ]
+softdepend: [ MythicMobs, ModelEngine ]
+
+authors: [ Sebilebi ]
+website: https://github.com/The-Last-Ascension
+
+commands:
+  combat:
+    description: Comando de gestion y pruebas del sistema de combate de The Last Ascension.
+    aliases: [ asccombat, acombat ]
+    permission: ascendent.combat.use
+
+permissions:
+  ascendent.combat.use:
+    description: Permite consultar estado de combate y habilidades.
+    default: true
+  ascendent.combat.admin:
+    description: Permite modificar propiedades de armas, invocar dummies y probar mecánicas.
+    default: op
